@@ -1,6 +1,8 @@
 package net.garrettsampson.elementbending;
 
 import com.mojang.logging.LogUtils;
+import net.garrettsampson.elementbending.block.ModBlocks;
+import net.garrettsampson.elementbending.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +21,9 @@ public class elementbending {
     private static final Logger LOGGER = LogUtils.getLogger();
     public elementbending() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

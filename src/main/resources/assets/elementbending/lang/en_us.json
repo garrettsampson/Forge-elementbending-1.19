@@ -1,0 +1,10 @@
+{
+  "item.elementbending.pure_nature": "Pure Nature",
+  "item.elementbending.nature": "Nature",
+
+  "block.elementbending.nature_block": "Block of Nature",
+  "block.elementbending.nature_ore": "Nature Ore",
+  "block.elementbending.deepslate_nature_ore": "Deepslate Nature Ore",
+
+  "itemGroup.Element_Bending": "Element Bending"
+}
